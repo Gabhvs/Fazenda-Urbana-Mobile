@@ -1,0 +1,83 @@
+.products_container {
+    font-family: "Chau Philomene One", sans-serif;
+    color: #FFF;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.cart_icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    cursor: pointer;
+    transition: transform 0.2s; /* Suaviza a transformação */
+}
+
+.cart_icon.has-items {
+    animation: pulse 0.6s infinite; /* Animação de pulsar */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta ligeiramente */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.products_grid {
+    padding-bottom: 4rem;
+}
+
+.products_title {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-top: 3rem;
+    margin: 0;
+}
+
+.product_item {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_name{
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.product_image {
+    width: 70%;
+}
+
+.product_price {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.quantity_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.quantity_add {
+    font-size: 1.5rem;
+    color: #FFF;
+    background-color: #000;
+    border: none;
+    padding: .1 2rem;
+    border-radius: 25%;
+    cursor: pointer;
+}

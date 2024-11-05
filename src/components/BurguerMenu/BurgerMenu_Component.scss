@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.burger-menu {
+    position: relative;
+    z-index: 1000;
+    font-family: 'Questrial', sans-serif;
+
+    /* Ícone do menu burger */
+    .burger-icon {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+        transition: opacity 0.3s ease;
+    }
+
+    /* Esconde o botão burger quando o menu estiver aberto */
+    .open .burger-icon {
+        opacity: 0;
+        /* Esconde o botão burger */
+        pointer-events: none;
+        /* Desativa o clique no botão */
+    }
+
+    .line {
+        width: 30px;
+        height: 4px;
+        background-color: #FFF;
+        margin: 3px 0;
+        transition: all 0.3s ease;
+    }
+
+    /* Menu lateral */
+    .side-menu {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        /* Começa fora da tela */
+        height: 100%;
+        width: 250px;
+        background-color: rgba(255, 255, 255, 0.8);
+        /* Fundo branco 50% transparente */
+        color: black;
+        /* Texto preto */
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        align-items: center;
+        /* Centraliza na vertical */
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+        /* Certifica que o menu lateral esteja acima de outros conteúdos */
+    }
+
+    .side-menu.open {
+        left: 0;
+        /* Menu entra na tela */
+    }
+
+    .logo {
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .logo-text {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .welcome_text {
+        font-size: 1.2rem;
+        margin-top: .5rem;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin: 20px 0;
+            color: black;
+            /* Texto preto */
+            text-decoration: none;
+            font-size: 1.4rem;
+            //font-weight: bold;
+            /* Negrito para melhor visibilidade */
+
+            a:hover {
+                color: #333;
+                /* Muda para cinza escuro ao passar o mouse */
+            }
+        }
+    }
+
+    /* Overlay que aparece ao abrir o menu */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+}

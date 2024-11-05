@@ -1,0 +1,19 @@
+.signup_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.signup_redirect {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #FFF;
+    text-decoration: underline;
+}

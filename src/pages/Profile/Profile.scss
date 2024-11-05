@@ -1,0 +1,31 @@
+.profile_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.profile_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background: #f5f5f5;
+    border-radius: 1rem;
+}
+
+.card_title {
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.delete_button {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #780000;
+    color: #FFF;
+}
